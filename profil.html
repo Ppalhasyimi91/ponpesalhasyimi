@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- Set karakter ke UTF-8 agar huruf latin & simbol tampil normal -->
+  <meta charset="UTF-8" />
+  <!-- Supaya layout responsif di hp -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Judul tab browser -->
+  <title>Profil - Pondok Pesantren Al Hasyimi</title>
+  <!-- Hubungkan ke file CSS utama -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- =========================
+       HEADER (LOGO + NAVBAR)
+       ========================= -->
+  <!-- Pakai header yang sama di semua halaman -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img
+          src="logo.png"
+          alt="Logo Pondok Pesantren Al Hasyimi"
+          class="brand-logo-image"
+        />
+      </a>
+
+      <!-- NAVIGASI -->
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li><a href="index.html">Beranda</a></li>
+
+          <li class="has-dropdown">
+            <a href="profil.html">Profil ▾</a>
+            <ul class="dropdown">
+              <li><a href="#sejarah">Sejarah</a></li>
+              <li><a href="#sistem-pendidikan">Sistem Pendidikan</a></li>
+              <li><a href="#pimpinan">Pimpinan</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="sekolah.html">Sekolah ▾</a>
+            <ul class="dropdown">
+              <li><a href="sekolah.html#madin">MADIN</a></li>
+              <li><a href="sekolah.html#tk">TK</a></li>
+              <li><a href="sekolah.html#mts">MTS</a></li>
+              <li><a href="sekolah.html#ma">MA</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="program.html">Program ▾</a>
+            <ul class="dropdown">
+              <li><a href="program.html#akademik">Akademik</a></li>
+              <li><a href="program.html#non-akademik">Non Akademik</a></li>
+            </ul>
+          </li>
+
+          <li><a href="prestasi.html">Prestasi</a></li>
+
+          <li class="has-dropdown">
+            <a href="informasi.html">Informasi ▾</a>
+            <ul class="dropdown">
+              <li><a href="informasi.html#kalender">Kalender Pendidikan</a></li>
+              <li><a href="informasi.html#jadwal-harian">Jadwal Harian Santri</a></li>
+              <li><a href="psb.html">Penerimaan Santri Baru</a></li>
+            </ul>
+          </li>
+
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <button class="btn-nav-primary">
+            Download
+          </button>
+        </div>
+      </nav>
+
+      <!-- Tombol menu HP -->
+      <button class="nav-toggle" aria-label="Toggle navigasi">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =========================
+       KONTEN UTAMA HALAMAN PROFIL
+       ========================= -->
+  <main>
+    <!-- SECTION: PROFIL UTAMA -->
+    <section class="section" id="profil">
+      <div class="container">
+        <!-- Judul section -->
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <!-- Eyebrow kecil di atas judul -->
+            <div class="section-eyebrow">Profil</div>
+
+            <!-- Judul besar -->
+            <h2 class="section-title">
+              Pondok Pesantren Modern dengan Manajemen Profesional.
+            </h2>
+
+            <!-- Paragraf pembuka -->
+            <p class="section-subtitle">
+              Sistem pendidikan memadukan kurikulum nasional dengan kurikulum khas pesantren,
+              pembiasaan ibadah, dan pembinaan karakter sepanjang hari.
+            </p>
+          </div>
+        </div>
+
+        <!-- GRID 2 KOLOM: teks profil dan kartu visual -->
+        <div class="profil-grid">
+          <!-- Kolom kiri: isi teks -->
+          <article class="profil-content">
+            <!-- Tab di atas (bukan tab dinamis, tapi sebagai label saja) -->
+            <div class="profil-tabs">
+              <!-- Tambahkan id untuk anchor dari navbar -->
+              <span class="profil-tab is-active" id="sejarah">Sejarah</span>
+              <span class="profil-tab" id="sistem-pendidikan">Sistem Pendidikan</span>
+              <span class="profil-tab" id="pimpinan">Pimpinan</span>
+            </div>
+
+            <!-- Isi paragraf tentang profil pesantren -->
+            <div class="profil-text-block">
+              <p>
+                Pondok Pesantren Modern didirikan sebagai ikhtiar menghadirkan pendidikan Islam yang
+                relevan dengan perkembangan zaman tanpa meninggalkan nilai-nilai salafus shalih.
+              </p>
+              <p>
+                Sejak awal, lembaga ini berkomitmen untuk melahirkan generasi yang kuat secara aqidah,
+                matang secara intelektual, dan siap berkontribusi di masyarakat global.
+              </p>
+              <p>
+                Dengan dukungan tenaga pendidik yang kompeten, lingkungan asrama yang kondusif, dan
+                kurikulum terintegrasi, santri dibimbing untuk tumbuh menjadi muslim yang berilmu,
+                berakhlak, dan bertanggung jawab.
+              </p>
+            </div>
+
+            <!-- Poin ringkas keunggulan -->
+            <div class="profil-highlight">
+              <div class="profil-highlight-item">
+                <div class="profil-highlight-label">Fokus</div>
+                Integrasi iman, ilmu, dan akhlak.
+              </div>
+              <div class="profil-highlight-item">
+                <div class="profil-highlight-label">Pendekatan</div>
+                Pembelajaran kelas, halaqah, dan pembinaan asrama.
+              </div>
+              <div class="profil-highlight-item">
+                <div class="profil-highlight-label">Output</div>
+                Santri siap kuliah, berwirausaha, dan berdakwah.
+              </div>
+            </div>
+          </article>
+
+          <!-- Kolom kanan: kartu visual lingkungan pesantren -->
+          <article class="profil-media-card" aria-label="Highlight profil pesantren">
+            <!-- Label kecil di atas -->
+            <div class="profil-media-label">Lingkungan Pesantren</div>
+
+            <!-- Judul isi kartu -->
+            <div class="profil-media-title">
+              Area belajar, asrama, dan musholla yang dirancang untuk kenyamanan santri.
+            </div>
+
+            <!-- Paragraf singkat -->
+            <div class="profil-media-tagline">
+              Zona bebas gawai, program tahfidz, kajian kitab, dan aktivitas kemandirian berjalan
+              beriringan setiap hari.
+            </div>
+
+            <!-- Kotak mengambang di bawah kanan -->
+            <div class="profil-media-floating">
+              <strong>24 Jam Pengasuhan</strong>
+              <span>
+                Setiap santri didampingi pembimbing asrama yang memantau ibadah, adab,
+                dan kemandirian dalam keseharian.
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER (SAMA UNTUK SEMUA HALAMAN)
+       ========================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Kolom 1: deskripsi singkat -->
+        <div>
+          <div class="footer-title">Pondok Pesantren Al Hasyimi</div>
+          <p class="footer-text">
+            Membentuk generasi pemimpin masa depan dengan pendidikan Islam terbaik. Bergabunglah bersama kami
+            dan wujudkan cita-cita menjadi generasi unggul berkarakter islami.
+          </p>
+        </div>
+
+        <!-- Kolom 2: kontak singkat -->
+        <div>
+          <div class="footer-title">Kontak</div>
+          <div class="footer-links">
+            <span>Telephone : 085960182100</span>
+            <span>WhatsApp : 082337660217</span>
+            <span>Email : ponpesalhasyimi@gmail.com</span>
+          </div>
+        </div>
+
+        <!-- Kolom 3: sosial media -->
+        <div>
+          <div class="footer-title">Ikuti Kami</div>
+          <div class="footer-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Baris paling bawah footer -->
+      <div class="footer-meta">
+        <span>© 2025 ponpesalhasyimi.</span>
+        <div class="footer-social">
+          <span class="footer-pill">Sistem Informasi Manajemen Pesantren</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================
+       JS SEDERHANA: Toggle Menu HP
+       ========================= -->
+  <script>
+    // Ambil tombol hamburger (nav-toggle)
+    const navToggle = document.querySelector('.nav-toggle');
+    // Ambil elemen nav (menu utama)
+    const nav = document.querySelector('.nav');
+
+    // Jika keduanya ada di halaman
+    if (navToggle && nav) {
+      // Pasang event ketika tombol diklik
+      navToggle.addEventListener('click', () => {
+        // Tambah/hapus class "nav-open" (diatur di CSS)
+        nav.classList.toggle('nav-open');
+      });
+    }
+  </script>
+</body>
+</html>
