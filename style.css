@@ -80,6 +80,7 @@ button {
   display: flex;
   align-items: center;
   gap: 0;
+  margin-left: 2rem;   /* 👉 geser logo ke kanan */
 }
 
 .brand-logo-image {
